@@ -3,12 +3,12 @@ import {
 	Route,
 	createRoutesFromElements,
 } from "react-router-dom";
-import { Home } from "./pages";
+import { Home, Root } from "./pages";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
-		<Route>
-			<Route path="/" element={<Home />} />
+		<Route path="/" element={<Root />}>
+			<Route path="home" element={<Home />} />
 		</Route>
 	)
 );
