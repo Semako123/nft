@@ -1,8 +1,14 @@
 import React from "react";
 import { logo, Storefront } from "../assets/index";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+	const navLinks = [
+		["Marketplace", "/market"],
+		["Ranking", "ranking"],
+		["Connect a wallet", "/wallet"],
+	];
 	return (
 		<nav className="px-[50px] h-[100px] flex items-center justify-between">
 			<div className="flex gap-[12px] items-center">
@@ -11,9 +17,11 @@ const Navbar = () => {
 			</div>
 			<div className="flex gap-3 items-center">
 				<ul className="flex gap-3">
-					<li>Marketplace</li>
-					<li>Ranking</li>
-					<li>Connect a wallet</li>
+					{navLinks.map(([name, link]) => (
+						<li>
+							<Link to={link}>{name}</Link>
+						</li>
+					))}
 				</ul>
 				<Button>Sign Up</Button>
 			</div>
