@@ -3,7 +3,7 @@ import { Button, Info, NftCard } from "../components";
 import { Rocket } from "../assets";
 import nftData from "../data/nfts";
 
-const Landing = () => {
+const Hero = () => {
 	const hero_info = [
 		["Total Sale", 240],
 		["Auctions", 100],
@@ -35,4 +35,4 @@ const Landing = () => {
 	);
 };
 
-export default Landing;
+export default Hero;
