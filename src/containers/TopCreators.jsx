@@ -1,9 +1,30 @@
-import React from 'react'
+import React from "react";
+import { Button, Creator } from "../components";
+import { RocketS } from "../assets";
+import artists from "../data/artists";
 
 const TopCreators = () => {
-  return (
-    <div>TopCreators</div>
-  )
-}
+	return (
+		<div className="px-20 py-12 text-white">
+			<div className="flex justify-between mb-[60px]">
+				<div>
+					<h3>Top Creators</h3>
+					<p>Checkout Top Rated Creators on the NFT Marketplace</p>
+				</div>
+				<div>
+					<Button outlined>
+						<img src={RocketS} alt="" />
+						<p>View Rankings</p>
+					</Button>
+				</div>
+			</div>
+			<div className="flex flex-wrap justify-between gap-y-10">
+				{artists.slice(0,12).map((artist, index) => (
+					<Creator artist={artist} index={index + 1} />
+				))}
+			</div>
+		</div>
+	);
+};
 
-export default TopCreators
+export default TopCreators;
