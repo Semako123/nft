@@ -1,11 +1,11 @@
 import React from "react";
-import { logo, Storefront } from "../assets/index";
+import { logo, Storefront, User } from "../assets/index";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	const navLinks = [
-		["Marketplace", "/market"],
+		["Marketplace", "/marketplace"],
 		["Ranking", "ranking"],
 		["Connect a wallet", "/wallet"],
 	];
@@ -18,12 +18,15 @@ const Navbar = () => {
 			<div className="flex gap-3 items-center">
 				<ul className="flex gap-3">
 					{navLinks.map(([name, link]) => (
-						<li>
+						<li className="text-white text-base px-5 py-3">
 							<Link to={link}>{name}</Link>
 						</li>
 					))}
 				</ul>
-				<Button>Sign Up</Button>
+				<Button>
+					<img src={User} alt="" />
+					<p>Sign Up</p>
+				</Button>
 			</div>
 		</nav>
 	);
