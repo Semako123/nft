@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Collections, Hero, TopCreators } from "../containers";
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+	return (
+		<>
+			<Hero />
+			<Collections />
+			<TopCreators />
+		</>
+	);
+};
 
-export default Home
+export default Home;

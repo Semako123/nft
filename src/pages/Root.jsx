@@ -4,7 +4,7 @@ import { Navbar } from "../components";
 
 const Root = () => {
 	return (
-		<div className="bg-[#2B2B2B] min-h-screen">
+		<div className="min-h-screen container mx-auto">
 			<Navbar />
 			<Outlet />
 		</div>
