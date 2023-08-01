@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+	font-family: "Work Sans", serif;
+}
+
+body {
+	background-color: #2b2b2b;
+}
