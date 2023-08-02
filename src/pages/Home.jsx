@@ -5,6 +5,7 @@ import {
 	TopCreators,
 	Categories,
 	Discover,
+	Exhibition,
 } from "../containers";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
 			<TopCreators />
 			<Categories />
 			<Discover />
+			<Exhibition />
 		</>
 	);
 };
