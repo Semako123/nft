@@ -25,6 +25,9 @@ import {
 	mushCol1,
 	mushCol2,
 	mushCol3,
+	nft1,
+	nft2,
+	nft3,
 } from "../assets";
 import artists from "./artists";
 
@@ -36,6 +39,25 @@ const nftData = [
 		price: 1.63,
 		highestBid: 0.33,
 	},
+	{
+		name: "Distant Galaxy",
+		img: nft1,
+		artist: artists[3],
+		price: 1.63,
+		highestBid: 0.33,
+	},{
+		name: "Life on Edena",
+		img: nft2,
+		artist: artists[18],
+		price: 1.63,
+		highestBid: 0.33,
+	},{
+		name: "AstrFiction",
+		img: nft3,
+		artist: artists[10],
+		price: 1.63,
+		highestBid: 0.33,
+	}
 ];
 
 export const nftCollection = [
