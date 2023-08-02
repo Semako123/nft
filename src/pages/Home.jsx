@@ -1,5 +1,5 @@
 import React from "react";
-import { Collections, Hero, TopCreators } from "../containers";
+import { Collections, Hero, TopCreators, Categories } from "../containers";
 
 const Home = () => {
 	return (
@@ -7,6 +7,7 @@ const Home = () => {
 			<Hero />
 			<Collections />
 			<TopCreators />
+			<Categories />
 		</>
 	);
 };
