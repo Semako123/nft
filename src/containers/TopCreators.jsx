@@ -8,7 +8,7 @@ const TopCreators = () => {
 		<div className="px-20 py-12 text-white">
 			<div className="flex justify-between mb-[20px]">
 				<div>
-					<h3 className="font-semibold text-4xl mb-2">Top Creators</h3>
+					<h3 className="font-semibold text-4xl mb-3">Top Creators</h3>
 					<p className="text-base mb-14 font-light">
 						Checkout Top Rated Creators on the NFT Marketplace
 					</p>
