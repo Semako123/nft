@@ -1,5 +1,11 @@
 import React from "react";
-import { Collections, Hero, TopCreators, Categories } from "../containers";
+import {
+	Collections,
+	Hero,
+	TopCreators,
+	Categories,
+	Discover,
+} from "../containers";
 
 const Home = () => {
 	return (
@@ -8,6 +14,7 @@ const Home = () => {
 			<Collections />
 			<TopCreators />
 			<Categories />
+			<Discover />
 		</>
 	);
 };
