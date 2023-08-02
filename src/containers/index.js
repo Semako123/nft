@@ -6,3 +6,4 @@ export { default as Footer } from "./Footer";
 export { default as HIW } from "./HIW";
 export { default as Mailing } from "./Mailing";
 export { default as TopCreators } from "./TopCreators";
+export { default as Exhibition } from "./Exhibition";
