@@ -1,7 +1,4 @@
 import {
-	Avatar13,
-	Avatar5,
-	Avatar6,
 	Basketball,
 	Camera,
 	MagicWand,
@@ -29,16 +26,15 @@ import {
 	mushCol2,
 	mushCol3,
 } from "../assets";
-import { Avatar1 } from "../assets";
+import artists from "./artists";
 
 const nftData = [
 	{
 		name: "Space Walking",
 		img: NFTspacew,
-		artist: {
-			name: "AnimaKid",
-			img: Avatar1,
-		},
+		artist: artists[9],
+		price: 1.63,
+		highestBid: 0.33,
 	},
 ];
 
@@ -49,7 +45,7 @@ export const nftCollection = [
 		img2: aniCol2,
 		img3: aniCol3,
 		value: 1023,
-		artist: { name: "MrFox", img: Avatar5 },
+		artist: artists[5],
 	},
 	{
 		name: "Magic Mushrooms",
@@ -57,7 +53,7 @@ export const nftCollection = [
 		img2: mushCol2,
 		img3: mushCol3,
 		value: 900,
-		artist: { name: "Shroomie", img: Avatar6 },
+		artist: artists[6],
 	},
 	{
 		name: "Disco Machines",
@@ -65,7 +61,7 @@ export const nftCollection = [
 		img2: disCol2,
 		img3: disCol3,
 		value: 104,
-		artist: { name: "BeKind2Robots", img: Avatar13 },
+		artist: artists[12],
 	},
 ];
 

@@ -13,7 +13,7 @@ const artists = [
 	{ name: "AnimaKid", sales: 120.0, img: Avatar9, ntfs: 720 },
 	{ name: "Dotgu", sales: 44.9, img: Avatar10, ntfs: 260 },
 	{ name: "Ghiblier", sales: 75.6, img: Avatar11, ntfs: 450 },
-	{ name: "InfiniByte", sales: 66.15, img: Avatar13, ntfs: 390 },
+	{ name: "BeKind2Robots", sales: 66.15, img: Avatar13, ntfs: 390 },
 	{ name: "DreamWeavers", sales: 88.35, img: Avatar14, ntfs: 520 },
 	{ name: "PulseWave", sales: 110.5, img: Avatar15, ntfs: 660 },
 	{ name: "PixelPunch", sales: 22.3, img: Avatar16, ntfs: 130 },
