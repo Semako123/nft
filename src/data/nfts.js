@@ -70,7 +70,7 @@ export const nftCollection = [
 		artist: artists[5],
 	},
 	{
-		name: "Magic Mushrooms",
+		name: "Magic Mashrooms",
 		img1: mushCol1,
 		img2: mushCol2,
 		img3: mushCol3,
