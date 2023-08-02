@@ -1,6 +1,7 @@
 export { default as logo } from "./logo.svg";
 export { default as Storefront } from "./Storefront.svg";
 export { default as Swatches } from "./Swatches.svg";
+export { default as Eye } from "./Eye.svg";
 export { default as PaintBrush } from "./PaintBrush.svg";
 export { default as MusicNote } from "./MusicNotes.svg";
 export { default as Camera } from "./Camera.svg";
@@ -38,6 +39,9 @@ export { default as disCol3 } from "./nft/disCol3.png";
 export { default as mushCol1 } from "./nft/mushCol1.png";
 export { default as mushCol2 } from "./nft/mushCol2.png";
 export { default as mushCol3 } from "./nft/mushCol3.png";
+export { default as nft1 } from "./nft/nft1.png";
+export { default as nft2 } from "./nft/nft2.png";
+export { default as nft3 } from "./nft/nft3.png";
 export { default as cat1 } from "./cat1.png";
 export { default as cat2 } from "./cat2.png";
 export { default as cat3 } from "./cat3.png";
