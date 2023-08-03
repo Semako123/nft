@@ -17,7 +17,7 @@ const Exhibition = () => {
 	});
 
 	return (
-		<div className="h-[640px] overflow-hidden my-16 rounded-3xl relative">
+		<div className="h-[640px] overflow-hidden my-16 relative">
 			<img src={mushCol1} alt="" className="w-full -translate-y-80" />
 			<div className="top-0 bg-gradient-to-b from-transparent to-[#A259FF] h-full w-full absolute"></div>
 			<div className="absolute bottom-0 w-full pb-24 px-28 flex justify-between items-end">
