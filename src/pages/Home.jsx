@@ -6,17 +6,25 @@ import {
 	Categories,
 	Discover,
 	Exhibition,
+	HIW,
+	Mailing,
 } from "../containers";
 
 const Home = () => {
 	return (
 		<>
-			<Hero />
-			<Collections />
-			<TopCreators />
-			<Categories />
-			<Discover />
+			<div className="container mx-auto">
+				<Hero />
+				<Collections />
+				<TopCreators />
+				<Categories />
+				<Discover />
+			</div>
 			<Exhibition />
+			<div className="container mx-auto">
+				<HIW />
+				<Mailing />
+			</div>
 		</>
 	);
 };
