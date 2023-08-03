@@ -43,10 +43,10 @@ const Footer = () => {
 				<p className="mb-4 w-[60%]">
 					Get exclusive promotions & updates straight to your inbox.
 				</p>
-				<div className="flex">
+				<div className="flex text-white font-normal">
 					<input
 						type="text"
-						className="pl-[25px] font-normal outline-none text-slate-950 pr-[45px] py-[15px] rounded-[20px] -mr-10"
+						className="pl-[25px] outline-none text-slate-950 pr-[45px] py-[15px] rounded-[20px] -mr-10"
 						placeholder="Enter your email here"
 					/>
 					<Button>Subscribe</Button>
