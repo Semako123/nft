@@ -5,3 +5,4 @@ export { default as NftCard } from "./NftCard";
 export { default as Collection } from "./Collection";
 export { default as Creator } from "./Creator";
 export { default as Category } from "./Category";
+export { default as InfoCard } from "./InfoCard";
