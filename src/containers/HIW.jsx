@@ -11,16 +11,16 @@ const HIW = () => {
 				"Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.",
     },
     {
-			title: "Setup Your Wallet",
+			title: "Create Collection",
 			img: collection,
 			content:
-				"Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.",
+				"Upload your work and setup your collection. Add a description, social links and floor price.",
     },
     {
-			title: "Setup Your Wallet",
+			title: "Start Earning",
 			img: earning,
 			content:
-				"Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.",
+				"Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.",
 		},
 	];
 	return (
