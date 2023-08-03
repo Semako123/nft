@@ -10,7 +10,7 @@ const Navbar = () => {
 		["Connect a wallet", "/wallet"],
 	];
 	return (
-		<nav className="px-[50px] h-[100px] flex items-center justify-between">
+		<nav className="px-[50px] h-[100px] flex items-center justify-between container mx-auto">
 			<div className="flex gap-[12px] items-center">
 				<img src={Storefront} alt="" />
 				<img src={logo} alt="NFT Marketplace" className="w-[200px]" />
