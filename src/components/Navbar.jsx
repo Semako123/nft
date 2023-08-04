@@ -11,10 +11,13 @@ const Navbar = () => {
 	];
 	return (
 		<nav className="px-[50px] h-[100px] flex items-center justify-between container mx-auto">
-			<div className="flex gap-[12px] items-center">
-				<img src={Storefront} alt="" />
-				<img src={logo} alt="NFT Marketplace" className="w-[200px]" />
-			</div>
+			<Link to="/">
+				<div className="flex gap-[12px] items-center">
+					<img src={Storefront} alt="" />
+					<img src={logo} alt="NFT Marketplace" className="w-[200px]" />
+				</div>
+			</Link>
+
 			<div className="flex gap-3 items-center">
 				<ul className="flex gap-3">
 					{navLinks.map(([name, link]) => (
@@ -23,10 +26,12 @@ const Navbar = () => {
 						</li>
 					))}
 				</ul>
-				<Button>
-					<img src={User} alt="" />
-					<p>Sign Up</p>
-				</Button>
+				<Link to="/auth">
+					<Button>
+						<img src={User} alt="" />
+						<p>Sign Up</p>
+					</Button>
+				</Link>
 			</div>
 		</nav>
 	);
