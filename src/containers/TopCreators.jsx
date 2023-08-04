@@ -14,7 +14,7 @@ const TopCreators = () => {
 					</p>
 				</div>
 				<div>
-					<Button outlined>
+					<Button outlined={2}>
 						<img src={RocketS} alt="" />
 						<p>View Rankings</p>
 					</Button>
