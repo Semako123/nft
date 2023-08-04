@@ -7,7 +7,7 @@ import { AiOutlineYoutube } from "react-icons/ai";
 
 const Footer = () => {
 	return (
-		<div className="text-[#CCC] font-light py-10 px-36 bg-[#3B3B3B] flex flex-wrap gap-y-14">
+		<div className="text-[#CCC] font-light py-10 px-36 bg-[#3B3B3B] flex flex-wrap gap-y-14 lg:flex-row flex-col">
 			<div className="mr-auto">
 				<div className="flex gap-3 items-center mb-7">
 					<img src={Storefront} alt="" />
