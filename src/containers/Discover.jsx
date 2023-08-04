@@ -14,7 +14,7 @@ const Discover = () => {
 					</p>
 				</div>
 				<div>
-					<Button outlined>
+					<Button outlined={2}>
 						<img src={Eye} alt="" />
 						<p>See All</p>
 					</Button>
