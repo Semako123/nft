@@ -33,7 +33,7 @@ const Footer = () => {
 					<Link>Ranking</Link>
 				</p>
 				<p className="mb-4 hover:text-[#A259FF] transition-all">
-					<Link>Connect a Wallet</Link>
+					<Link to="/wallet">Connect a Wallet</Link>
 				</p>
 			</div>
 			<div>
