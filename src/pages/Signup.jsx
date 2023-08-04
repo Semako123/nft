@@ -16,7 +16,7 @@ const Signup = () => {
 						Welcome! enter your details and start creating, collecting and
 						selling NFTs.
 					</p>
-					<div className="flex flex-col items-start gap-y-4 lg:w-[50%]">
+					<div className="flex flex-col items-start gap-y-4 lg:w-[50%] text-slate-900 font-normal">
 						<div className="w-full flex items-center">
 							<PiUserCircle className="text-[#797979] text-2xl translate-x-8 -ml-6" />
 							<input
@@ -24,7 +24,7 @@ const Signup = () => {
 								name=""
 								id=""
 								placeholder="Username"
-								className="py-2 outline-none pr-5 pl-9 text-slate-900 rounded-full w-full"
+								className="py-2 outline-none pr-5 pl-10 rounded-full w-full"
 							/>
 						</div>
 						<div className="w-full flex items-center">
@@ -34,7 +34,7 @@ const Signup = () => {
 								name=""
 								id=""
 								placeholder="Email Address"
-								className="py-2 outline-none pr-5 pl-9 text-slate-900 rounded-full w-full"
+								className="py-2 outline-none pr-5 pl-10 rounded-full w-full"
 							/>
 						</div>
 						<div className="w-full flex items-center">
@@ -44,7 +44,7 @@ const Signup = () => {
 								name=""
 								id=""
 								placeholder="Password"
-								className="py-2 outline-none pr-5 pl-9 text-slate-900 rounded-full w-full"
+								className="py-2 outline-none pr-5 pl-10 rounded-full w-full"
 							/>
 						</div>
 						<div className="w-full flex items-center">
@@ -54,7 +54,7 @@ const Signup = () => {
 								name=""
 								id=""
 								placeholder="Confirm Password"
-								className="py-2 outline-none pr-5 pl-9 text-slate-900 rounded-full w-full"
+								className="py-2 outline-none pr-5 pl-10 rounded-full w-full"
 							/>
 						</div>
 						<Button lg>Create Account</Button>
