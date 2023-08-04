@@ -59,3 +59,8 @@ export { default as wallet } from "./wallet.png";
 export { default as collection } from "./collection.png";
 export { default as earning } from "./earning.png";
 export { default as mailing } from "./mailing.png";
+export { default as WalletBg } from "./WalletBg.png";
+export { default as Metamask } from "./Metamask.png";
+export { default as WalletConnect } from "./WalletConnect.png";
+export { default as Coinbase } from "./Coinbase.png";
+export { default as AuthBg } from "./AuthBg.png";
