@@ -3,7 +3,7 @@ import {
 	Route,
 	createRoutesFromElements,
 } from "react-router-dom";
-import { ConnectWallet, Home, Root, Signup } from "./pages";
+import { ConnectWallet, Creators, Home, Root, Signup } from "./pages";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -11,6 +11,7 @@ const router = createBrowserRouter(
 			<Route index element={<Home />} />
 			<Route path="wallet" element={<ConnectWallet />} />
 			<Route path="auth" element={<Signup />} />
+			<Route path="creators" element={<Creators />} />
 		</Route>
 	)
 );
