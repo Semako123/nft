@@ -19,6 +19,12 @@ const Ranking = () => {
 	const sortArtists = () => {
 		setArtisits(artistList.sort(() => 0.5 - Math.random()));
 	};
+	const translate = [
+		"translate-x-[0%]",
+		"translate-x-[100%]",
+		"translate-x-[200%]",
+		"translate-x-[300%]",
+	];
 
 	return (
 		<div className="container mx-auto text-white px-12 py-12 ">
@@ -62,9 +68,7 @@ const Ranking = () => {
 			</div>
 			<div className="h-1 mb-5">
 				<div
-					className={`transition-all ease-[cubic-bezier(0.25,0.1,0.25,1)] w-1/4 h-full bg-[#3B3B3B] translate-x-[${
-						100 * cid
-					}%] rounded-full`}></div>
+					className={`transition-all ease-[cubic-bezier(0.25,0.1,0.25,1)] w-1/4 h-full bg-[#3B3B3B] ${translate[cid]} rounded-full`}></div>
 			</div>
 			<div className="flex flex-col gap-y-5">
 				<div className="flex justify-evenly gap-7 items-center border-[1px] border-[#3B3B3B] rounded-[20px] px-6 py-2 text-[#858584]">
