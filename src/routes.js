@@ -11,7 +11,7 @@ const router = createBrowserRouter(
 			<Route index element={<Home />} />
 			<Route path="wallet" element={<ConnectWallet />} />
 			<Route path="auth" element={<Signup />} />
-			<Route path="creators" element={<Creators />} />
+			<Route path="ranking" element={<Creators />} />
 		</Route>
 	)
 );
