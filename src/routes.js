@@ -10,6 +10,8 @@ import {
 	Root,
 	Signup,
 	Marketplace,
+	NftMarket,
+	CollectionsMarket,
 } from "./pages";
 
 const router = createBrowserRouter(
@@ -19,7 +21,11 @@ const router = createBrowserRouter(
 			<Route path="wallet" element={<ConnectWallet />} />
 			<Route path="auth" element={<Signup />} />
 			<Route path="ranking" element={<Ranking />} />
-			<Route path="marketplace" element={<Marketplace />} />
+			<Route path="marketplace" element={<Marketplace />}>
+				<Route index element={<NftMarket />} />
+				<Route path="nft" element={<NftMarket />} />
+				<Route path="collections" element={<CollectionsMarket />} />
+			</Route>
 		</Route>
 	)
 );
