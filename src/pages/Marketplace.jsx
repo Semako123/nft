@@ -27,7 +27,7 @@ const Marketplace = () => {
 				animate={{
 					x: 0,
 					opacity: 1,
-					transition: { duration: 0.5, type: "just" },
+					transition: { duration: 0.5, type: "tween" },
 				}}
 				exit={{ x: "-100%", opacity: 0 }}
 				className="text-white">

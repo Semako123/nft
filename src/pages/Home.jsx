@@ -17,7 +17,11 @@ const Home = () => {
 			<motion.div
 				key="home"
 				initial={{ x: "100%", opacity: 0 }}
-				animate={{ x: 0, opacity: 1, transition: { duration: 0.5 ,  type: "just" } }}
+				animate={{
+					x: 0,
+					opacity: 1,
+					transition: { duration: 0.5, type: "tween" },
+				}}
 				exit={{ x: "-100%", opacity: 0 }}>
 				<div className="container mx-auto">
 					<Hero />

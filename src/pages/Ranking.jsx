@@ -34,7 +34,7 @@ const Ranking = () => {
 			animate={{
 				x: 0,
 				opacity: 1,
-				transition: { duration: 0.5, type: "just" },
+				transition: { duration: 0.5, type: "tween" },
 			}}
 			exit={{ x: "-100%", opacity: 0 }}
 			className="container mx-auto text-white px-12 py-12 ">
