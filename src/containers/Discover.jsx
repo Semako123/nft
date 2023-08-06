@@ -2,6 +2,7 @@ import React from "react";
 import { Button, NftCard } from "../components";
 import { Eye } from "../assets";
 import nftData from "../data/nfts";
+import { Link } from "react-router-dom";
 
 const Discover = () => {
 	return (
@@ -14,15 +15,17 @@ const Discover = () => {
 					</p>
 				</div>
 				<div>
-					<Button outlined={2}>
-						<img src={Eye} alt="" />
-						<p>See All</p>
-					</Button>
+					<Link to="/marketplace/nft">
+						<Button outlined={2}>
+							<img src={Eye} alt="" />
+							<p>See All</p>
+						</Button>
+					</Link>
 				</div>
 			</div>
 			<div className="flex justify-between">
-				{nftData.slice(1, ).map((nft) => (
-					<NftCard nft={nft} />
+				{nftData.slice(1, 4).map((nft, index) => (
+					<NftCard nft={nft} key={index} />
 				))}
 			</div>
 		</div>
