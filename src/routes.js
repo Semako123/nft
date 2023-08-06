@@ -12,6 +12,7 @@ import {
 	Marketplace,
 	NftMarket,
 	CollectionsMarket,
+	ExhibitionPage,
 } from "./pages";
 
 const router = createBrowserRouter(
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
 				<Route path="nft" element={<NftMarket />} />
 				<Route path="collections" element={<CollectionsMarket />} />
 			</Route>
+			<Route path="/exhibition" element={<ExhibitionPage />} />
 		</Route>
 	)
 );
