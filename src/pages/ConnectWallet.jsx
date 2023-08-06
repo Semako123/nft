@@ -1,10 +1,20 @@
 import React from "react";
 import { Coinbase, Metamask, WalletBg, WalletConnect } from "../assets";
 import { Button } from "../components";
+import { motion } from "framer-motion";
 
 const ConnectWallet = () => {
 	return (
-		<div className="flex gap-x-16 text-white">
+		<motion.div
+			key="wallet"
+			initial={{ x: "100%", opacity: 0 }}
+			animate={{
+				x: 0,
+				opacity: 1,
+				transition: { duration: 0.5, type: "just" },
+			}}
+			exit={{ x: "-100%", opacity: 0 }}
+			className="flex gap-x-16 text-white">
 			<div className="">
 				<img src={WalletBg} alt="" className="h-full" />
 			</div>
@@ -27,7 +37,7 @@ const ConnectWallet = () => {
 					</Button>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

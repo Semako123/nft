@@ -2,10 +2,19 @@ import React from "react";
 import { AuthBg } from "../assets";
 import { Button } from "../components";
 import { PiUserCircle, PiEnvelope, PiPassword } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 const Signup = () => {
 	return (
-		<div>
+		<motion.div
+			key="auth"
+			initial={{ x: "100%", opacity: 0 }}
+			animate={{
+				x: 0,
+				opacity: 1,
+				transition: { duration: 0.5, type: "just" },
+			}}
+			exit={{ x: "-100%", opacity: 0 }}>
 			<div className="flex gap-x-16 text-white">
 				<div className="">
 					<img src={AuthBg} alt="" className="h-full" />
@@ -61,7 +70,7 @@ const Signup = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

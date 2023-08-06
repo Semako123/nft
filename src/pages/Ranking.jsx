@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import artists from "../data/artists";
+import { motion } from "framer-motion";
 
 const Ranking = () => {
 	const [cid, setCid] = useState(0);
@@ -27,7 +28,16 @@ const Ranking = () => {
 	];
 
 	return (
-		<div className="container mx-auto text-white px-12 py-12 ">
+		<motion.div
+			key="ranking"
+			initial={{ x: "100%", opacity: 0 }}
+			animate={{
+				x: 0,
+				opacity: 1,
+				transition: { duration: 0.5, type: "just" },
+			}}
+			exit={{ x: "-100%", opacity: 0 }}
+			className="container mx-auto text-white px-12 py-12 ">
 			<h2 className="mb-5 text-5xl font-semibold w-fit">Top Creators</h2>
 			<p className="font-light mb-14 lg:w-[70%]">
 				Check out top ranking NFT artists on the NFT Marketplace.
@@ -107,7 +117,7 @@ const Ranking = () => {
 					);
 				})}
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 

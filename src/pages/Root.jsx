@@ -6,7 +6,7 @@ import ScrollToTop from "../utils/ScrollToTop";
 
 const Root = () => {
 	return (
-		<div className="mx-auto">
+		<div className="mx-auto overflow-x-hidden">
 			<ScrollToTop />
 			<Navbar />
 			<Outlet />
