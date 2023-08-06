@@ -1,12 +1,12 @@
 import React from "react";
 
-const NftCard = ({ nft, large }) => {
+const NftCard = ({ nft, large, dark }) => {
 	const { name, img, artist, price, highestBid } = nft;
 	return (
 		<div
 			className={`${
 				large ? "lg:w-[500px]" : ""
-			} w-[330px] rounded-2xl overflow-hidden text-white bg-[#3B3B3B]`}>
+			} w-[330px] rounded-2xl overflow-hidden text-white ${dark ? "bg-[#2B2B2B]" :"bg-[#3B3B3B]"}`}>
 			<img src={img} alt={name} className="w-full" />
 			<div>
 				<div className="px-6 py-4">
