@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Creator } from "../components";
 import { RocketS } from "../assets";
 import artists from "../data/artists";
+import { Link } from "react-router-dom";
 
 const TopCreators = () => {
 	return (
@@ -14,10 +15,12 @@ const TopCreators = () => {
 					</p>
 				</div>
 				<div>
-					<Button outlined={2}>
-						<img src={RocketS} alt="" />
-						<p>View Rankings</p>
-					</Button>
+					<Link to="/ranking">
+						<Button outlined={2}>
+							<img src={RocketS} alt="" />
+							<p>View Rankings</p>
+						</Button>
+					</Link>
 				</div>
 			</div>
 			<div className="flex flex-wrap justify-between gap-y-10">

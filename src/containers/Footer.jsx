@@ -9,10 +9,12 @@ const Footer = () => {
 	return (
 		<div className="text-[#CCC] font-light py-10 px-36 bg-[#3B3B3B] flex flex-wrap gap-y-14 lg:flex-row flex-col">
 			<div className="mr-auto">
-				<div className="flex gap-3 items-center mb-7">
-					<img src={Storefront} alt="" />
-					<img src={logo} alt="" />
-				</div>
+				<Link to="/">
+					<div className="flex gap-3 items-center mb-7">
+						<img src={Storefront} alt="" />
+						<img src={logo} alt="" />
+					</div>
+				</Link>
 				<p className="mb-4 w-[90%]">NFT marketplace UI created with React.</p>
 				<p className="mb-4">Join our community</p>
 				<div className="flex gap-3">
@@ -27,10 +29,10 @@ const Footer = () => {
 					Explore
 				</h5>
 				<p className="mb-4 hover:text-[#A259FF] transition-all">
-					<Link>Marketplace</Link>
+					<Link to="/marketplace">Marketplace</Link>
 				</p>
 				<p className="mb-4 hover:text-[#A259FF] transition-all">
-					<Link>Ranking</Link>
+					<Link to="/ranking">Ranking</Link>
 				</p>
 				<p className="mb-4 hover:text-[#A259FF] transition-all">
 					<Link to="/wallet">Connect a Wallet</Link>
