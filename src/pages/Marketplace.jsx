@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
-import nftData from "../data/nfts";
-import { NftCard } from "../components";
+import { Outlet, Link, useLocation } from "react-router-dom";
+import nftData, { nftCollection } from "../data/nfts";
 
 const Marketplace = () => {
+	const [cid, setCid] = useState(0);
+	const location = useLocation();
+	useEffect(() => {
+		if (
+			location.pathname === "/marketplace" ||
+			location.pathname === "/marketplace/nft"
+		) {
+			setCid(0);
+		} else {
+			setCid(1);
+		}
+	}, [location]);
+
+	const translate = ["translate-x-0", "translate-x-[100%]"];
 	return (
 		<div className="text-white">
 			<div className="px-24 py-12 container mx-auto">
@@ -22,10 +36,32 @@ const Marketplace = () => {
 					<AiOutlineSearch className="text-[#858584] text-3xl -translate-x-12 hover:cursor-pointer" />
 				</div>
 			</div>
+			<div className="border-t border-[#3B3B3B]">
+				<div className="w-[80%] mx-auto flex py-3">
+					<Link to="/marketplace/nft" className="w-1/2">
+						<div className="text-center text-xl cursor-pointer font-semibold">
+							NFTs
+							<span className="ml-2 bg-[#858584] py-1 px-[6px] rounded-full font-secondary font-normal text-sm">
+								{nftData.length * 20}
+							</span>
+						</div>
+					</Link>
+					<Link to="/marketplace/collections" className="w-1/2">
+						<div className="text-center text-xl cursor-pointer font-semibold">
+							Collections
+							<span className="ml-2 bg-[#858584] py-1 px-[6px] rounded-full font-secondary font-normal text-sm">
+								{nftCollection.length * 13}
+							</span>
+						</div>
+					</Link>
+				</div>
+				<div className="w-[80%] mx-auto">
+					<div
+						className={`w-[50%] bg-[#858584] h-1 rounded-full ${translate[cid]} transition-all ease-[cubic-bezier(0.25,0.1,0.25,1)]`}></div>
+				</div>
+			</div>
 			<div className="bg-[#3B3B3B] py-12 mb-[2px] flex flex-wrap justify-center gap-12">
-				{nftData.map((nft) => (
-					<NftCard nft={nft} dark/>
-				))}
+				<Outlet />
 			</div>
 		</div>
 	);
