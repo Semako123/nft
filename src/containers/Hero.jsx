@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Info, NftCard } from "../components";
 import { Rocket } from "../assets";
 import nftData from "../data/nfts";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
 	const hero_info = [
@@ -19,9 +20,11 @@ const Hero = () => {
 					NFT marketplace UI created with Anima for Figma. Collect, buy and sell
 					art from more than 20k NFT artists.
 				</p>
-				<Button sz="lg">
-					<img src={Rocket} alt="" /> Get Started
-				</Button>
+				<Link to="/marketplace">
+					<Button>
+						<img src={Rocket} alt="" /> Get Started
+					</Button>
+				</Link>
 				<div className="mt-8 flex justify-between max-w-[80%]">
 					{hero_info.map(([name, value]) => (
 						<Info name={name} value={value} />
