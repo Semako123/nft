@@ -20,8 +20,8 @@ const Navbar = () => {
 
 			<div className="flex gap-3 items-center">
 				<ul className="flex gap-3">
-					{navLinks.map(([name, link]) => (
-						<li className="text-white text-base px-5 py-3">
+					{navLinks.map(([name, link], index) => (
+						<li className="text-white text-base px-5 py-3" key={index}>
 							<Link to={link}>{name}</Link>
 						</li>
 					))}
