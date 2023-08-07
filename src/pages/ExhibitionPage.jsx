@@ -27,10 +27,13 @@ const ExhibitionPage = () => {
 						Minted on Sep 30, 2022
 					</p>
 					<p className="font-secondary text-[#858584] mb-2">Created by</p>
-					<div className="flex items-center gap-3 mb-8">
-						<img src={Avatar3} alt="" className="h-7 w-7 rounded-full" />
-						<p>Orbitian</p>
-					</div>
+					<Link to="/profile">
+						<div className="flex items-center gap-3 mb-8">
+							<img src={Avatar3} alt="" className="h-7 w-7 rounded-full" />
+							<p>Orbitian</p>
+						</div>
+					</Link>
+
 					<p className="font-secondary text-[#858584] mb-2">Description</p>
 					<p className="font-light mb-8">
 						<span className="block mb-4">The Orbitians</span>
