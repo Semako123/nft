@@ -79,6 +79,7 @@ export { default as cat5 } from "./cat5.png";
 export { default as cat6 } from "./cat6.png";
 export { default as cat7 } from "./cat7.png";
 export { default as cat8 } from "./cat8.png";
+export { default as exhibit } from "./exhibit.png";
 export { default as wallet } from "./wallet.png";
 export { default as collection } from "./collection.png";
 export { default as earning } from "./earning.png";
