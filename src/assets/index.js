@@ -89,3 +89,4 @@ export { default as Metamask } from "./Metamask.png";
 export { default as WalletConnect } from "./WalletConnect.png";
 export { default as Coinbase } from "./Coinbase.png";
 export { default as AuthBg } from "./AuthBg.png";
+export { default as profileBD } from "./profileBD.png";
