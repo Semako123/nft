@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Profile = () => {
 	return (
 		<motion.div
-			key="exhibition"
+			key="profile"
 			initial={{ x: "100%", opacity: 0 }}
 			animate={{
 				x: 0,
