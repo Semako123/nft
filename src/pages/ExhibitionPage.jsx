@@ -20,37 +20,54 @@ const ExhibitionPage = () => {
 			}}
 			className="text-white">
 			<img src={exhibit} alt="" className="w-full" />
-			<div className="flex">
-				<div className="py-10 px-28 w-[60%]">
-					<h2>The Orbitals</h2>
-					<p>Minted on Sep 30, 2022</p>
-					<p>Created by</p>
-					<div className="flex items-center gap-3">
+			<div className="flex py-12">
+				<div className="px-28 w-[60%]">
+					<h2 className="mb-2 text-6xl font-semibold">The Orbitians</h2>
+					<p className="text-[#858584] mb-7 font-light">
+						Minted on Sep 30, 2022
+					</p>
+					<p className="font-secondary text-[#858584] mb-2">Created by</p>
+					<div className="flex items-center gap-3 mb-8">
 						<img src={Avatar3} alt="" className="h-7 w-7 rounded-full" />
 						<p>Orbitian</p>
 					</div>
-					<p>Description</p>
-					<p>
-						The Orbitians is a collection of 10,000 unique NFTs on the Ethereum
-						blockchain,There are all sorts of beings in the NFT Universe. The
-						most advanced and friendly of the bunch are Orbitians. They live in
-						a metal space machines, high up in the sky and only have one foot on
-						Earth. These Orbitians are a peaceful race, but they have been at
-						war with a group of invaders for many generations. The invaders are
-						called Upside-Downs, because of their inverted bodies that live on
-						the ground, yet do not know any other way to be. Upside-Downs
-						believe that they will be able to win this war if they could only
-						get an eye into Orbitian territory, so they've taken to make human
-						beings their target.
+					<p className="font-secondary text-[#858584] mb-2">Description</p>
+					<p className="font-light mb-8">
+						<span className="block mb-4">The Orbitians</span>
+						<span className="block mb-4">
+							is a collection of 10,000 unique NFTs on the Ethereum blockchain.
+						</span>
+						<span className="block mb-4">
+							There are all sorts of beings in the NFT Universe. The most
+							advanced and friendly of the bunch are Orbitians.
+						</span>
+						<span className="block">
+							They live in a metal space machines, high up in the sky and only
+							have one foot on Earth.
+						</span>
+						<span className="block">
+							These Orbitians are a peaceful race, but they have been at war
+							with a group of invaders for many generations. The invaders are
+							called Upside-Downs, because of their inverted bodies that live on
+							the ground, yet do not know any other way to be. Upside-Downs
+							believe that they will be able to win this war if they could only
+							get an eye into Orbitian territory, so they've taken to make human
+							beings their target.
+						</span>
 					</p>
-					<p>Details</p>
-					<div className="hover:cursor-pointer flex gap-3 items-center">
-						<BsGlobe /> <p>View on Etherscan</p>
+					<div className="mb-7">
+						<p className="font-secondary text-[#858584] mb-2">Details</p>
+						<div className="hover:cursor-pointer flex gap-3 items-center mb-1">
+							<BsGlobe className="text-[#858584]" />{" "}
+							<p className="font-light">View on Etherscan</p>
+						</div>
+						<div className="hover:cursor-pointer flex gap-3 items-center mb-1">
+							<BsGlobe className="text-[#858584]" />{" "}
+							<p className="font-light">View Original</p>
+						</div>
 					</div>
-					<div className="hover:cursor-pointer flex gap-3 items-center">
-						<BsGlobe /> <p>View Original</p>
-					</div>
-					<p>Tags</p>
+
+					<p className="font-secondary text-[#858584] mb-2">Tags</p>
 					<div>
 						{tags.map((tag, index) => (
 							<div key={index}>{tag}</div>
