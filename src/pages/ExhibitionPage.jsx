@@ -90,7 +90,7 @@ const ExhibitionPage = () => {
 			<div>
 				<div className="flex justify-between mb-[20px] px-20 py-10 text-white container mx-auto">
 					<h3 className="font-semibold text-4xl mb-2">More Like This</h3>
-					<Link>
+					<Link to="/profile">
 						<Button outlined={2}>
 							<HiOutlineArrowRight className="text-[#A259FF]" /> Go To Artist
 							Page
