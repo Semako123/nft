@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import artists from "../data/artists";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Ranking = () => {
 	const [cid, setCid] = useState(0);
@@ -93,27 +94,29 @@ const Ranking = () => {
 				{artists.map((artist, index) => {
 					const change = getRandomFloat();
 					return (
-						<div className="flex justify-evenly gap-7 items-center bg-[#3B3B3B] rounded-[20px] px-6 py-2">
-							<div className="h-7 w-7 grid place-items-center bg-[#2B2B2B] rounded-full text-[#858584] font-secondary text-sm">
-								{index + 1}
+						<Link to="/profile">
+							<div className="flex justify-evenly gap-7 items-center bg-[#3B3B3B] rounded-[20px] px-6 py-2">
+								<div className="h-7 w-7 grid place-items-center bg-[#2B2B2B] rounded-full text-[#858584] font-secondary text-sm">
+									{index + 1}
+								</div>
+								<div className="w-[40%] flex gap-6 items-center hover:cursor-pointer">
+									<img
+										src={artist.img}
+										alt=""
+										className="rounded-full w-14 h-14"
+									/>
+									<p className="font-semibold">{artist.name}</p>
+								</div>
+								<p
+									className={`w-[15%] font-secondary ${
+										change < 0 ? "text-[#ff5353]" : "text-[#00AC4F]"
+									}`}>
+									{change}%
+								</p>
+								<p className="w-[15%] font-secondary">{artist.ntfs}</p>
+								<p className="w-[15%] font-secondary">{artist.sales} ETH</p>
 							</div>
-							<div className="w-[40%] flex gap-6 items-center hover:cursor-pointer">
-								<img
-									src={artist.img}
-									alt=""
-									className="rounded-full w-14 h-14"
-								/>
-								<p className="font-semibold">{artist.name}</p>
-							</div>
-							<p
-								className={`w-[15%] font-secondary ${
-									change < 0 ? "text-[#ff5353]" : "text-[#00AC4F]"
-								}`}>
-								{change}%
-							</p>
-							<p className="w-[15%] font-secondary">{artist.ntfs}</p>
-							<p className="w-[15%] font-secondary">{artist.sales} ETH</p>
-						</div>
+						</Link>
 					);
 				})}
 			</div>

@@ -15,10 +15,12 @@ const NftCard = ({ nft, large, dark }) => {
 				<div>
 					<div className="px-6 py-4">
 						<h5 className="text-base mb-1 font-semibold">{name}</h5>
-						<div className="flex gap-3 items-center mb-5">
-							<img src={artist.img} alt="" className="rounded-full h-5 w-5" />
-							<p className="font-light text-sm">{artist.name}</p>
-						</div>
+						<Link to="/profile">
+							<div className="flex gap-3 items-center mb-5">
+								<img src={artist.img} alt="" className="rounded-full h-5 w-5" />
+								<p className="font-light text-sm">{artist.name}</p>
+							</div>{" "}
+						</Link>
 						{!large && (
 							<div className="flex justify-between">
 								<div>

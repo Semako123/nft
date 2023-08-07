@@ -28,10 +28,12 @@ const Collection = ({ nftColData }) => {
 				</div>
 				<div>
 					<h5 className="font-bold mb-3 text-xl">{name}</h5>
-					<div className="hover:cursor-pointer flex gap-2 items-center">
-						<img src={artist.img} alt="" className="w-6 h-6 rounded-full" />
-						<p className="font-light text-sm">{artist.name}</p>
-					</div>
+					<Link to="/profile">
+						<div className="hover:cursor-pointer flex gap-2 items-center">
+							<img src={artist.img} alt="" className="w-6 h-6 rounded-full" />
+							<p className="font-light text-sm">{artist.name}</p>
+						</div>
+					</Link>
 				</div>
 			</div>
 		</Link>

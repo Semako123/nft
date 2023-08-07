@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Creator = ({ artist, index }) => {
 	return (
-		<Link to="/">
+		<Link to="/profile">
 			<div className="w-[240px] h-[238px] bg-[#3B3B3B] rounded-[20px] flex items-center justify-center flex-col hover:cursor-pointer relative p-[20px]">
 				<div className="lg:absolute top-5 left-5 w-7 h-7 rounded-full text-[#858584] bg-[#2B2B2B] grid place-items-center">
 					{index}
