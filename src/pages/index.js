@@ -7,3 +7,4 @@ export { default as Marketplace } from "./Marketplace";
 export { default as NftMarket } from "./NftMarket";
 export { default as CollectionsMarket } from "./CollectionsMarket";
 export { default as ExhibitionPage } from "./ExhibitionPage";
+export { default as Profile } from "./Profile";

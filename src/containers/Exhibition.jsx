@@ -1,6 +1,7 @@
 import React from "react";
 import { Avatar6, Eye, mushCol1 } from "../assets";
 import { Button, Timer } from "../components";
+import { Link } from "react-router-dom";
 
 const Exhibition = () => {
 	return (
@@ -16,10 +17,12 @@ const Exhibition = () => {
 					<h2 className="font-semibold text-white text-5xl mb-8">
 						Magic Mashrooms
 					</h2>
-					<Button light>
-						<img src={Eye} alt="" />
-						<p>See NFT</p>
-					</Button>
+					<Link to="/exhibition">
+						<Button light>
+							<img src={Eye} alt="" />
+							<p>See NFT</p>
+						</Button>
+					</Link>
 				</div>
 				<Timer />
 			</div>
