@@ -68,24 +68,29 @@ const ExhibitionPage = () => {
 					</div>
 
 					<p className="font-secondary text-[#858584] mb-2">Tags</p>
-					<div>
+					<div className="flex flex-wrap gap-5">
 						{tags.map((tag, index) => (
-							<div key={index}>{tag}</div>
+							<div
+								key={index}
+								className="text-xs uppercase bg-[#3B3B3B] px-3 py-2 rounded-[10px] w-fit">
+								{tag}
+							</div>
 						))}
 					</div>
 				</div>
-				<div>
+				<div className="flex justify-center items-start pt-10">
 					<Timer>
 						<Button>Place Bid</Button>
 					</Timer>
 				</div>
 			</div>
 			<div>
-				<div>
-					<h3>More Like This</h3>
+				<div className="flex justify-between mb-[20px] px-20 py-10 text-white container mx-auto">
+					<h3 className="font-semibold text-4xl mb-2">More Like This</h3>
 					<Link>
 						<Button outlined={2}>
-							<HiOutlineArrowRight /> Go To Artist Page
+							<HiOutlineArrowRight className="text-[#A259FF]" /> Go To Artist
+							Page
 						</Button>
 					</Link>
 				</div>
